@@ -32,11 +32,11 @@ function hasCoffee = staindetection(image)
     
     % Count the number of presumed stained pixels in the image
     highVals = sum(mask(:) == 1);
-    stainPercentage = (highVals / (X*Y))*100;
+    stainPercentage = (highVals / (X*Y))*100
     
     % If the image is deemed to have greater than 0.1% coffee stain, it is
     % flagged as being stained. Otherwise, it is deemed clean.
-    if stainPercentage > 0.1
+    if stainPercentage > 0.07
         hasCoffee = 1;
     else
         hasCoffee = 0;
