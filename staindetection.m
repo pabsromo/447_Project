@@ -36,7 +36,7 @@ function hasCoffee = staindetection(image)
     
     % If the image is deemed to have greater than 0.1% coffee stain, it is
     % flagged as being stained. Otherwise, it is deemed clean.
-    if stainPercentage > 0.07
+    if stainPercentage > 0.1
         hasCoffee = 1;
     else
         hasCoffee = 0;
